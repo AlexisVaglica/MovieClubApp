@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0460C0632BFF6E3A001CBCE6 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460C0622BFF6E3A001CBCE6 /* Authentication.swift */; };
 		04A762112BFD2C0500B582D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A762102BFD2C0500B582D8 /* AppDelegate.swift */; };
 		04A762132BFD2C0500B582D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A762122BFD2C0500B582D8 /* SceneDelegate.swift */; };
 		04A7621A2BFD2C0700B582D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A762192BFD2C0700B582D8 /* Assets.xcassets */; };
@@ -15,9 +16,13 @@
 		04A7622E2BFD31C200B582D8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7622C2BFD31C200B582D8 /* AuthViewController.swift */; };
 		04A7622F2BFD31C200B582D8 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A7622D2BFD31C200B582D8 /* AuthViewController.xib */; };
 		04A762312BFD349F00B582D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A762302BFD349F00B582D8 /* LaunchScreen.storyboard */; };
+		04A762342BFE17DE00B582D8 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A762332BFE17DE00B582D8 /* UITextField+Extensions.swift */; };
+		04A762362BFE3BF800B582D8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A762352BFE3BF800B582D8 /* UIViewController+Extensions.swift */; };
+		04C0FB7B2BFE81FE00377C8B /* UIResponder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0FB7A2BFE81FE00377C8B /* UIResponder+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0460C0622BFF6E3A001CBCE6 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		04A7620D2BFD2C0500B582D8 /* MovieClubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieClubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A762102BFD2C0500B582D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A762122BFD2C0500B582D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		04A7622C2BFD31C200B582D8 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		04A7622D2BFD31C200B582D8 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		04A762302BFD349F00B582D8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A762332BFE17DE00B582D8 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		04A762352BFE3BF800B582D8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		04C0FB7A2BFE81FE00377C8B /* UIResponder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0460C0602BFF6DFE001CBCE6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04A7622B2BFD306800B582D8 /* Auth */,
+				04A762242BFD2DAF00B582D8 /* Launch */,
+				04A762322BFE17C300B582D8 /* Utils */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0460C0612BFF6E09001CBCE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0460C0622BFF6E3A001CBCE6 /* Authentication.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		04A762042BFD2C0500B582D8 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +86,10 @@
 		04A7620F2BFD2C0500B582D8 /* MovieClubApp */ = {
 			isa = PBXGroup;
 			children = (
+				0460C0612BFF6E09001CBCE6 /* Model */,
+				0460C0602BFF6DFE001CBCE6 /* ViewController */,
 				04A762102BFD2C0500B582D8 /* AppDelegate.swift */,
 				04A762122BFD2C0500B582D8 /* SceneDelegate.swift */,
-				04A7622B2BFD306800B582D8 /* Auth */,
-				04A762242BFD2DAF00B582D8 /* Launch */,
 				04A762192BFD2C0700B582D8 /* Assets.xcassets */,
 				04A7621E2BFD2C0700B582D8 /* Info.plist */,
 			);
@@ -87,6 +113,17 @@
 				04A7622D2BFD31C200B582D8 /* AuthViewController.xib */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		04A762322BFE17C300B582D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04A762332BFE17DE00B582D8 /* UITextField+Extensions.swift */,
+				04A762352BFE3BF800B582D8 /* UIViewController+Extensions.swift */,
+				04C0FB7A2BFE81FE00377C8B /* UIResponder+Extensions.swift */,
+			);
+			name = Utils;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A762342BFE17DE00B582D8 /* UITextField+Extensions.swift in Sources */,
 				04A7622E2BFD31C200B582D8 /* AuthViewController.swift in Sources */,
+				04C0FB7B2BFE81FE00377C8B /* UIResponder+Extensions.swift in Sources */,
+				04A762362BFE3BF800B582D8 /* UIViewController+Extensions.swift in Sources */,
 				04A762292BFD303300B582D8 /* LoginViewController.swift in Sources */,
 				04A762112BFD2C0500B582D8 /* AppDelegate.swift in Sources */,
 				04A762132BFD2C0500B582D8 /* SceneDelegate.swift in Sources */,
+				0460C0632BFF6E3A001CBCE6 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

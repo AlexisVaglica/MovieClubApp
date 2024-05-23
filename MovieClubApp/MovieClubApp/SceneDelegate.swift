@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MovieClubApp
 //
-//  Created by viciecal on 21/05/2024.
+//  Created by AlexisVaglica on 21/05/2024.
 //
 
 import UIKit
